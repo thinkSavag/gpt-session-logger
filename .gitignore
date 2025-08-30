@@ -1,18 +1,58 @@
-# Python
+# --- Python ----------------------------------------------------
 __pycache__/
-*.pyc
-.env
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual envs
 .venv/
 venv/
+env/
+pip-wheel-metadata/
 
-# Local state
-sessions.json
-
-# OS/editor
-.DS_Store
-*.code-workspace
-.vscode/
-
-# Render/Build artifacts
-dist/
+# Packaging / build
 build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+
+# Test / type / lint caches & reports
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.cache/
+
+# --- IDE & editor ---------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# --- OS junk ---------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ------------------------------------------------------
+*.log
+logs/
+
+# --- Secrets & local config -----------------------------------
+.env
+.env.*
+*.local
+*.secret
+.envrc
+
+# --- App-local artifacts --------------------------------------
+sessions.json         # local scratch data; don’t commit
+archives/             # your personal archive folder
